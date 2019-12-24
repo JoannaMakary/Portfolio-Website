@@ -1,0 +1,267 @@
+body {
+	font-family: 'Quicksand', sans-serif;
+	text-align: center;
+}
+
+.has-text-centered {
+	text-align: center !important;
+}
+
+.navbar {
+	padding: 1.2rem;
+	width: 100%;
+}
+
+.main {
+	margin-top: 2vh;
+}
+
+.avatar-img {
+	margin-top: 15px;
+	width: 150px;
+}
+
+.title {
+	font-weight: bold;
+	font-size: 50px;
+	letter-spacing: 3px;
+}
+
+.subtitle {
+	font-size: 20px;
+	margin-top: -10px;
+}
+
+.parallax-div-00 {
+	/* Parallax Scrolling Effect */
+	background-image: url('../images/main.png');
+	height: 100vh;
+	background-attachment: fixed;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: 99%;
+}
+
+.parallax-div-01 {
+	background: #b0bfff;
+	margin-top: -120px;
+	height: 100%;
+	background-attachment: fixed;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 100%;
+}
+
+.parallax-div-02 {
+	background-image: url('https://i.imgur.com/duRWCkx.jpg');
+	height: 100vh;
+	background-attachment: fixed;
+	background-repeat: repeat-x;
+	background-size: contain;
+	width: 100%;
+}
+
+.parallax-div-03 {
+	background-image: url('../images/urban.png');
+	height: 100vh;
+	background-attachment: fixed;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+}
+
+.about {
+	padding-top: 10px;
+	font-size: 1.25rem;
+}
+
+.is-white {
+	color: white;
+}
+
+.about-title {
+	padding-top: 15vh;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.column {
+	width: 60%;
+	margin: 0 auto;
+	display: inline-block;
+}
+
+.columns {
+    margin-left: -.75rem;
+    margin-right: -.75rem;
+	margin-top: -.75rem;
+}
+
+.columns:last-child {
+    margin-bottom: -.75rem;
+}
+
+#skills {
+	background-color: white;
+	margin: 12vh auto;
+	width: 80%;
+	max-width: 1200px;
+	border-radius: 20px;
+	box-shadow: 0 5px 5px 0 rgba(233,240,243,0.5), 0 0 0 1px #E6ECF8;
+	display: block;
+	justify-content: center;
+	display: flex;
+}
+
+.col-sm {
+	padding: 25px 40px;
+}
+
+.col-sm:nth-child(-n+2) {
+	border-right: 1px solid #E6ECF8;
+}
+
+.iconz {
+	margin: 30px 0;
+	width: 100px;
+}
+
+.smaller-title {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.list-title {
+	color: #b0bfff;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.top-buffer {
+	margin-top: 25px;
+}
+
+/* Overlay Effect on Projects */
+.project {
+	display: block;
+	width: 100%;
+	height: auto;
+  }
+  
+.caption {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #9AA7E1;
+  }
+  
+.thumbnail:hover .caption {
+	opacity: 1;
+  }
+  
+.text {
+	color: white;
+	font-size: 20px;
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
+  }
+
+.btn-top {
+	margin-top: 5px;
+}
+
+.box-fade {
+	background-color: rgba(233,240,243,0.8);
+	padding: 10px 0px 10px 0px;
+	width: 60%;
+	border-radius: 15px;
+	box-shadow: 0 5px 5px 0 rgba(233,240,243,0.5), 0 0 0 1px #E6ECF8;
+}
+
+/****************
+* MEDIA QUERIES *
+****************/
+
+/* (A) Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* (B) Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+	.parallax-div-00B {
+		/* Parallax Scrolling Effect */
+		background-image: url('../images/main.png');
+		height: 100vh;
+		background-attachment: scroll;
+		background-position: center bottom 120px;
+		background-repeat: no-repeat;
+		background-size: 95%;
+	}
+
+	.parallax-div-02B {
+		background-image: url('https://i.imgur.com/duRWCkx.jpg');
+		height: 200vh;
+		background-attachment: scroll;
+		background-repeat: repeat-x;
+		background-size: cover;
+		width: 100%;
+	}
+
+	.parallax-div-03 {
+		background-image: url('../images/urban.png');
+		height: 100vh;
+		background-attachment: scroll;
+		background-position: center bottom;
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 100%;
+	}
+}
+
+/* (C) Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+	.parallax-div-02B {
+		background-image: url('https://i.imgur.com/duRWCkx.jpg');
+		height: 200vh;
+		background-attachment: scroll;
+		background-repeat: repeat-x;
+		background-size: cover;
+		width: 100%;
+	}
+
+	.box-fade {
+		background-color: rgba(233,240,243,0.8);
+		padding: 10px 0px 10px 0px;
+		width: 90%;
+		border-radius: 15px;
+		box-shadow: 0 5px 5px 0 rgba(233,240,243,0.5), 0 0 0 1px #E6ECF8;
+	}
+}
+
+/* (D) Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* (E) Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}
