@@ -50,6 +50,10 @@
                     </li>
 
                     <li class="nav-item">
+                        <a class="nav-link" href="#contact-me">Contact</a>
+                    </li>
+
+                    <li class="nav-item">
                         <a class="nav-link" href="https://github.com/JoannaMakary?tab=repositories">Github</a>
                     </li>
 
@@ -153,12 +157,39 @@
                 <div class="parallax-div parallax-div-02 parallax-div-02B">
                     <p class="about about-title has-text-centered container header-image"><img src="images/recent-projects.png" width="70%"></p>
                     <div class="column">
-                        <p class="about has-text-centered container">Here are some of the projects that I have worked on.</p>
-                    </div><br><br>
+                        <p class="about has-text-centered container">Here are some of the projects that I am currently working on, or have worked on.</p>
+                    </div>
 
                     <div class="container">
-
                         <div class="row">
+                            <div class="col-md-4 top-buffer">
+                                <div class="thumbnail">
+                                    <a href="https://github.com/JoannaMakary/MapleRoyals-PriceGuide">
+                                        <img class="project" src="images/project-6.png">
+                                        <div class="caption">
+                                            <div class="text">
+                                                MapleRoyals Price Guide<br>
+                                                <button type="button" class="btn btn-outline-light btn-top">View Code</button>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 top-buffer">
+                                <div class="thumbnail">
+                                    <a href="https://github.com/JoannaMakary/MAB-Assignment">
+                                        <img class="project" src="images/project-7.png">
+                                        <div class="caption">
+                                            <div class="text">
+                                                Max Advanced Brakes Assignment<br>
+                                                <button type="button" class="btn btn-outline-light btn-top">View Code</button>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
                             <div class="col-md-4 top-buffer">
                                 <div class="thumbnail">
                                     <a href="https://github.com/JoannaMakary/Leaguelity">
@@ -253,11 +284,32 @@
                         <br> I am self-motivated and enjoy developing solutions to difficult problems.
                         <br> I bring a positive energy and enjoy collaborating with like-minded individuals.
                         <br>
-
                     </p>
+                    <div id="contact-me" class="container">
+                        <form method="POST" action="https://formspree.io/f/moqpdaeb" id="contact-form">
+                            <h2 id="contact-text">Contact me</h2>
+                            <div class="form-group">
+                                <p><label>Name:</label>
+                                <input id="name" name="name" type="text" /></p>
+                            </div>
+                            <div class="form-group">
+                                <p><label>Email Address:</label>
+                                    <input name="email" id="email" type="email" /></p>
+                            </div>
+                            <div class="form-group">
+                                <p><label>Message:</label> 
+                                <textarea id="message" name="message"></textarea> </p>
+                            </div>
+                                
+                                <p><button type="submit">Submit</button></p>
+                            </form>
+                            <div id="status"></div>
+                     </div>
+                    </div>
                 </div>
             </section>
 
+            <script src="scripts/main.js"></script>
             <!-- jQuery, Popper.js, Bootstrap JS -->
             <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
