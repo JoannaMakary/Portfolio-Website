@@ -257,6 +257,36 @@ ul {
 	}
 }
 
+#filters {
+	margin-top: 10px;
+}
+
+#filter-node, #filter-js, #filter-python, #filter-express, #filter-angular, #filter-react, #filter-mongo {
+	background-color: #C4CFFF;
+	cursor: pointer;
+	border: 1px solid white;
+	border-radius: 8px;
+	color: #424860;
+	margin-right: 3px;
+	padding: 3px;
+}
+
+#filter-reset {
+	font-size: 15px;
+	background-color: transparent;
+	color: #424860;
+	border: none;
+	cursor: pointer;
+}
+
+.reset-selected {
+	font-size: 15px;
+	background-color: transparent;
+	color: #424860;
+	border: none;
+	cursor: pointer;
+}
+
 #contact-me {
 	width: 100%;
 	max-width: 500px;
