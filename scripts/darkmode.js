@@ -1,10 +1,7 @@
 $(document).ready(function () {
-    $("#dark-mode").click(function(){
-        if ($("#dark-mode").html() === "Dark Mode") {
-            $("#dark-mode").html("Light Mode");
-        } else {
-            $("#dark-mode").html("Dark Mode");
-        }
+
+    $("i").click(function(){
+        $("#night-mode-icon").toggleClass("img-bright");
         $("body").toggleClass("dark-bg");
         $(".title").toggleClass("perilight");
         $(".subtitle, .nav-link, #filter-reset").toggleClass("perilighter");

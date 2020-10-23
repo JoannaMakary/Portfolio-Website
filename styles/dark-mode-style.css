@@ -70,3 +70,6 @@
     color: #7289DA !important;
 }
 
+.img-bright {
+	filter: invert(1);
+}
