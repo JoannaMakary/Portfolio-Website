@@ -9,8 +9,24 @@
 // Backbone = JavaScript
 
 $(document).ready(function () {
+  // Pop-up Boxes
+  //----- OPEN
+  $("[data-popup-open]").on("click", function (e) {
+    var targeted_popup_class = jQuery(this).attr("data-popup-open");
+    $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
 
-      // Shows all projects
+    e.preventDefault();
+  });
+
+  //----- CLOSE
+  $("[data-popup-close]").on("click", function (e) {
+    var targeted_popup_class = jQuery(this).attr("data-popup-close");
+    $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
+
+    e.preventDefault();
+  });
+
+  // Shows all projects
   $("#filter-reset").click(function () {
     $("#maple-royals").show();
     $("#max-brakes").show();

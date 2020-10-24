@@ -271,6 +271,137 @@ ul {
 	box-shadow: 0 5px 5px 0 rgba(233,240,243,0.5), 0 0 0 1px #E6ECF8;
 }
 
+.btn-cust {
+	margin-top: 5px;
+	border: 1px #f8f9fa solid;
+	color: #f8f9fa;
+	text-decoration: none;
+	text-align: center;
+	font-weight: 400;
+	display: inline-block;
+	border-radius: .25rem;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	transition: 0.5s;
+}
+
+.btn-cust:hover {
+	color: #3b3b3b;
+	text-decoration: none;
+	background-color: white;
+
+}
+
+/* POP UP BOXES */
+/* Outer */
+.popup {
+	width:100%;
+	height:100%;
+	display:none;
+	position:fixed;
+	top:0px;
+	left:0px;
+	background:rgba(0,0,0,0.75);
+	z-index: 1;
+}
+
+/* Inner */
+.popup-inner {
+	max-width:1500px;
+	width:85%;
+	padding: 40px 0px 40px 40px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	-webkit-transform:translate(-50%, -50%);
+	transform:translate(-50%, -50%);
+	box-shadow:0px 2px 6px rgba(0,0,0,1);
+	border-radius:3px;
+	background: #E1E7F9;
+	background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+	background-position: center bottom;
+	background-repeat: repeat;
+}
+
+/* Close Button */
+.popup-close {
+	width:30px;
+	height:30px;
+	padding-top:4px;
+	display:inline-block;
+	position:absolute;
+	top:0px;
+	right:0px;
+	transition:ease 0.25s all;
+	-webkit-transform:translate(50%, -50%);
+	transform:translate(50%, -50%);
+	border-radius:1000px;
+	background:rgba(176,191,240,0.9);
+	font-family:Arial, Sans-Serif;
+	font-size:20px;
+	text-align:center;
+	line-height:100%;
+	color:#fff;
+}
+
+.popup-close:hover {
+	-webkit-transform:translate(50%, -50%) rotate(180deg);
+	transform:translate(50%, -50%) rotate(180deg);
+	background:rgba(255,255,255,1);
+	color: #b0bfff;
+	text-decoration:none;
+}
+
+.pop-title {
+	margin-bottom: 15px;
+	color: #8088b1;
+	font-weight: 600;
+}
+
+#maple-pop-img {
+	width: 100%;
+}
+
+.pop-ul {
+	margin-left: 25px;
+	list-style-type: disc !important;
+}
+
+.status-progress {
+	font-weight: 600;
+	font-size: 1.1rem;
+	color: orange;
+}
+
+.btn-popped {
+	margin-top: 20px;
+	background-color: #b0bfff;
+	border: 1px #f8f9fa solid;
+	color: #f8f9fa;
+	text-decoration: none;
+	text-align: center;
+	font-weight: 400;
+	display: inline-block;
+	border-radius: .25rem;
+	padding: .375rem .75rem;
+	font-size: 1.1rem;
+	transition: 0.5s;
+}
+
+.btn-popped:hover {
+	border: 1px #b0bfff solid;
+	color: #b0bfff;
+	text-decoration: none;
+	background-color: white;
+
+}
+
+.close-text {
+	font-weight: 600;
+	color: #909dd8;
+}
+	  
+
 /****************
 * MEDIA QUERIES *
 ****************/

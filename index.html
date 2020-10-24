@@ -84,7 +84,7 @@
         </div>
     </nav>
 
-    <!-- Parallax Scroll 00 -->
+    <!-- First Page - Parallax Scroll 00 -->
 
     <section id="00">
         <div class="parallax-div parallax-div-00 parallax-div-00B">
@@ -96,7 +96,7 @@
         </div>
     </section>
 
-    <!-- Parallax Scroll 01 -->
+    <!-- About/Skills (Parallax Scroll 01) -->
     <section id="01">
         <div class="parallax-div parallax-div-01">
             <p class="about about-title has-text-centered is-white container">Hi, I'm Joanna Makary. It's nice to meet you.</p>
@@ -161,12 +161,12 @@
             </div>
 
 
-            <!-- Parallax Scroll 02 -->
+            <!-- Recent Projects (Parallax Scroll 02) -->
             <section id="02">
                 <div class="parallax-div parallax-div-02 parallax-div-02B">
                     <p class="about about-title has-text-centered container header-image"><img src="images/recent-projects.png" width="70%"></p>
                     <div class="column">
-                        <p class="about has-text-centered container">Here are some of the projects that I am currently working on, or have worked on.</p>
+                        <p class="about has-text-centered container">These are projects that I am currently working on, or have worked on. <br>Hover over for more information about each.</p>
                         Click below to filter the projects by language/framework:
                         <div id="filters">
                             <button id="filter-node">Node.js</button> <button id="filter-js">JavaScript</button> <button id="filter-python">Python</button> <button id="filter-express">Express</button> <button id="filter-angular">Angular</button> <button id="filter-react">React</button> <button id="filter-mongo">MongoDB</button>
@@ -174,16 +174,50 @@
                         <button id="filter-reset">Reset Filters</button>
                     </div>
 
+
+                    <div class="popup" data-popup="popup-1">
+                        <div class="popup-inner">
+                            <h2 class="pop-title">MapleRoyals Price Guide</h2>
+                            <div class="container-fluid">
+                                <div class="row">
+                                  <div class="col">
+                                    <img id="maple-pop-img" src="images/project-6.png">
+                                  </div>
+                                  <div class="my-auto col text-left">
+                                    A website dedicated to the free market system in the game MapleRoyals. <br>
+                                    Built with <strong>MERN</strong> stack (MongoDB, Express, React, Node.js)<br><br>
+
+                                    <ul class="pop-ul">
+                                        <li>Provides user with prices for in-game items.</li>
+                                        <li>Items are sorted by their respective category.</li>
+                                        <li>User can submit prices for owner to review.</li>
+                                      </ul>  
+                                      
+                                    <br>
+                                    <div class="status-progress">Status: In Progress</div>
+
+                                    <a class="btn-popped" href="https://github.com/JoannaMakary/MapleRoyals-PriceGuide">View on Github</a>
+                                    
+                                  </div>
+                                </div>
+                              </div>
+                              <br>
+                            <a class="close-text" data-popup-close="popup-1" href="#">Close</a>
+
+                            <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+                        </div>
+                    </div>
+
+
                     <div class="container">
                         <div class="row">
                             <div id="maple-royals" class="col-md-4 top-buffer">
                                 <div class="thumbnail">
-                                    <a href="https://github.com/JoannaMakary/MapleRoyals-PriceGuide">
                                         <img class="project" src="images/project-6.png">
                                         <div class="caption">
                                             <div class="text">
                                                 MapleRoyals Price Guide<br>
-                                                <button type="button" class="btn btn-outline-light btn-top">View Code</button>
+                                                <a class="btn-cust" data-popup-open="popup-1" href="#">View More</a>
                                             </div>
                                         </div>
                                     </a>
@@ -292,7 +326,7 @@
             <!-- Parallax Scroll 03 -->
             <section id="03">
                 <div class="parallax-div-03 parallax-div-03B">
-                    <p class="about about-title has-text-centered container header-image"><img src="images/about-me.png" width="40%"></p><br>
+                    <p class="about about-title has-text-centered container header-image"><img id="about-img" src="images/about-me.png" width="40%"></p><br>
                     <p class="box-fade container">I pride myself in a passion for user experience and performance.
                         <br> I have a love for learning and staying on top of the latest technologies.
                         <br> I am self-motivated and enjoy developing solutions to difficult problems.

@@ -14,6 +14,10 @@ $(document).ready(function () {
         $("#contact-me").toggleClass("dark-contact");
         $("#contact-text, label").toggleClass("perilight");
         $("#name, #email, #message").toggleClass("dark-bg");
-        $(".col-sm:nth-child(-n+2)").toggleClass("dark-border")
+        $(".col-sm:nth-child(-n+2)").toggleClass("dark-border");
+        $("#about-img").toggleClass("img-brighter");
+        $(".popup-inner").toggleClass("innerpop-dark");
+        $(".pop-title").toggleClass("perilight")
+        $(".btn-popped").toggleClass("popbtn-dark")
     })
 });
