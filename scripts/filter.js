@@ -10,7 +10,26 @@
 
 $(document).ready(function () {
   // Pop-up Boxes
-  //----- OPEN
+  
+  // OPEN PRC POP-UP
+  $("[data-popup-prc]").on("click", function (e) {
+    var targeted_popup_class = jQuery(this).attr("data-popup-prc");
+    $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
+
+    e.preventDefault();
+  });
+
+    //----- CLOSE PRC-POPUP
+    $("[data-popclose-prc]").on("click", function (e) {
+      var targeted_popup_class = jQuery(this).attr("data-popclose-prc");
+      $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
+  
+      e.preventDefault();
+    });
+
+
+
+  //----- OPEN 
   $("[data-popup-open]").on("click", function (e) {
     var targeted_popup_class = jQuery(this).attr("data-popup-open");
     $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
