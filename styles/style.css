@@ -1,3 +1,8 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
 	font-family: 'Quicksand', sans-serif;
 	text-align: center;
@@ -7,13 +12,84 @@ body {
 	text-align: center !important;
 }
 
+#night-mode {
+	margin-right: -80vw;
+	z-index: 1;
+	top: 10px;
+	right: 0px;
+	position: -webkit-sticky;
+	position: sticky;
+}
+
+#night-mode-icon {
+	margin-top: -10px;
+	width: 25px;
+}
+
+/* iOS Toggle Button */
+.form-switch {
+	display: inline-block;
+	cursor: pointer;
+	-webkit-tap-highlight-color: transparent;
+  }
+  
+  .form-switch i {
+	position: relative;
+	display: inline-block;
+	width: 46px;
+	height: 26px;
+	background-color: #e6e6e6;
+	border-radius: 23px;
+	vertical-align: text-bottom;
+	transition: all 0.3s linear;
+  }
+  
+  .form-switch i::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 42px;
+	height: 22px;
+	background-color: #fff;
+	border-radius: 11px;
+	transform: translate3d(2px, 2px, 0) scale3d(1, 1, 1);
+	transition: all 0.25s linear;
+  }
+  
+  .form-switch i::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 22px;
+	height: 22px;
+	background-color: #fff;
+	border-radius: 11px;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24);
+	transform: translate3d(2px, 2px, 0);
+	transition: all 0.1s ease-in-out;
+  }
+  
+  .form-switch:active i::after {
+	width: 28px;
+	transform: translate3d(2px, 2px, 0);
+  }
+  
+  .form-switch:active input:checked + i::after { transform: translate3d(16px, 2px, 0); }
+  
+  .form-switch input { display: none; }
+  
+  .form-switch input:checked + i { background-color: #b0bfff; }
+  
+  .form-switch input:checked + i::before { transform: translate3d(18px, 2px, 0) scale3d(0, 0, 0); }
+  
+  .form-switch input:checked + i::after { transform: translate3d(22px, 2px, 0); }
+
+
+
+
 .navbar {
 	padding: 1.2rem;
 	width: 100%;
-}
-
-.main {
-	margin-top: 2vh;
 }
 
 .avatar-img {
@@ -32,48 +108,46 @@ body {
 	margin-top: -10px;
 }
 
-.parallax-div-00 {
+.parallax-div-main {
 	/* Parallax Scrolling Effect */
 	background-image: url('../images/main.png');
-	height: 100vh;
+	height: 97vh;
 	background-attachment: fixed;
-	background-position: center bottom;
+	background-position: center bottom 1vh;
 	background-repeat: no-repeat;
-	background-size: 99%;
+	background-size: 95%;
 }
 
-.parallax-div-01 {
+/* Skills */
+.parallax-div-skills {
 	background: #b0bfff;
 	margin-top: -120px;
-	height: 100%;
-	background-attachment: fixed;
-	background-position: center bottom;
-	background-repeat: no-repeat;
-	background-size: contain;
-	width: 100%;
+	background-attachment: scroll;
+	background-repeat: repeat;
+	background-size: auto;
 }
 
-.parallax-div-02 {
+/* Recent Projects */
+.parallax-div-projects {
 	background-image: url('https://i.imgur.com/duRWCkx.jpg');
-	height: 140vh;
-	background-attachment: fixed;
-	background-repeat: repeat-x;
-	background-size: contain;
-	width: 100%;
+	background-attachment: scroll;
+	background-size: cover;
+	padding-bottom: 50px;
 }
 
-.parallax-div-03 {
+/* About Me */
+.parallax-div-about {
 	background-image: url('../images/urban.png');
-	height: 150vh;
-	background-attachment: fixed;
-	background-position: center bottom;
-	background-repeat: no-repeat;
+	background-attachment: scroll;
 	background-size: cover;
-	width: 100%;
+	padding-bottom: 50px;
+}
+
+#about-img {
+	width: 70%
 }
 
 .about {
-	padding-top: 10px;
 	font-size: 1.25rem;
 }
 
@@ -149,6 +223,9 @@ ul {
 	margin-top: 25px;
 }
 
+#projects-title {
+	width: 70%;
+}
 /* Overlay Effect on Projects */
 .project {
 	display: block;
@@ -192,69 +269,174 @@ ul {
 .box-fade {
 	background-color: rgba(233,240,243,0.8);
 	padding: 10px 0px 10px 0px;
-	width: 60%;
+	width: 50%;
 	border-radius: 15px;
 	box-shadow: 0 5px 5px 0 rgba(233,240,243,0.5), 0 0 0 1px #E6ECF8;
 }
 
-/****************
-* MEDIA QUERIES *
-****************/
-
-/* (A) Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+.btn-cust {
+	margin-top: 5px;
+	border: 1px #f8f9fa solid;
+	color: #f8f9fa;
+	text-decoration: none;
+	text-align: center;
+	font-weight: 400;
+	display: inline-block;
+	border-radius: .25rem;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	transition: 0.5s;
 }
 
-/* (B) Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 600px) {
-	.parallax-div-00B {
-		/* Parallax Scrolling Effect */
-		background-image: url('../images/main.png');
-		height: 100vh;
-		background-attachment: scroll;
-		background-position: center bottom 120px;
-		background-repeat: no-repeat;
-		background-size: 95%;
-	}
+.btn-cust:hover {
+	color: #3b3b3b;
+	text-decoration: none;
+	background-color: white;
 
-	.parallax-div-02B {
-		background-image: url('https://i.imgur.com/duRWCkx.jpg');
-		height: 200vh;
-		background-attachment: scroll;
-		background-repeat: repeat-x;
-		background-size: cover;
-		width: 100%;
-	}
-
-	.parallax-div-03 {
-		background-image: url('../images/urban.png');
-		height: 150vh;
-		background-attachment: scroll;
-		background-position: center bottom;
-		background-repeat: no-repeat;
-		background-size: cover;
-		width: 100%;
-	}
 }
 
-/* (C) Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
-	.parallax-div-02B {
-		background-image: url('https://i.imgur.com/duRWCkx.jpg');
-		height: 200vh;
-		background-attachment: scroll;
-		background-repeat: repeat-x;
-		background-size: cover;
-		width: 100%;
-	}
+/* POP UP BOXES */
+/* Outer */
+.popup {
+	width:100%;
+	height:100%;
+	display:none;
+	position:fixed;
+	top:0px;
+	left:0px;
+	background:rgba(0,0,0,0.75);
+	z-index: 1;
+}
 
-	.box-fade {
-		background-color: rgba(233,240,243,0.8);
-		padding: 10px 0px 10px 0px;
-		width: 90%;
-		border-radius: 15px;
-		box-shadow: 0 5px 5px 0 rgba(233,240,243,0.5), 0 0 0 1px #E6ECF8;
-	}
+/* Inner */
+.popup-inner {
+	max-width:1500px;
+	width:85%;
+	padding: 40px 0px 40px 40px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	-webkit-transform:translate(-50%, -50%);
+	transform:translate(-50%, -50%);
+	box-shadow:0px 2px 6px rgba(0,0,0,1);
+	border-radius:3px;
+	background: #E1E7F9;
+	background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+	background-position: center bottom;
+	background-repeat: repeat;
+}
+
+/* Close Button */
+.popup-close {
+	width:30px;
+	height:30px;
+	padding-top:4px;
+	display:inline-block;
+	position:absolute;
+	top:0px;
+	right:0px;
+	transition:ease 0.25s all;
+	-webkit-transform:translate(50%, -50%);
+	transform:translate(50%, -50%);
+	border-radius:1000px;
+	background:rgba(176,191,240,0.9);
+	font-family:Arial, Sans-Serif;
+	font-size:20px;
+	text-align:center;
+	line-height:100%;
+	color:#fff;
+}
+
+.popup-close:hover {
+	-webkit-transform:translate(50%, -50%) rotate(180deg);
+	transform:translate(50%, -50%) rotate(180deg);
+	background:rgba(255,255,255,1);
+	color: #b0bfff;
+	text-decoration:none;
+}
+
+.pop-title {
+	margin-bottom: 15px;
+	color: #8088b1;
+	font-weight: 600;
+}
+
+#maple-pop-img {
+	width: 100%;
+}
+
+.pop-ul {
+	margin-left: 25px;
+	list-style-type: disc !important;
+}
+
+.status-progress {
+	font-weight: 600;
+	font-size: 1.1rem;
+	color: orange;
+}
+
+.btn-popped {
+	margin-top: 20px;
+	background-color: #b0bfff;
+	border: 1px #f8f9fa solid;
+	color: #f8f9fa;
+	text-decoration: none;
+	text-align: center;
+	font-weight: 400;
+	display: inline-block;
+	border-radius: .25rem;
+	padding: .375rem .75rem;
+	font-size: 1.1rem;
+	transition: 0.5s;
+}
+
+.btn-popped:hover {
+	border: 1px #b0bfff solid;
+	color: #b0bfff;
+	text-decoration: none;
+	background-color: white;
+
+}
+
+.close-text {
+	font-weight: 600;
+	color: #909dd8;
+}
+	  
+
+
+
+#filters {
+	margin-top: 10px;
+}
+
+#filter-node, #filter-js, #filter-python, #filter-express, #filter-angular, #filter-react, #filter-mongo {
+	margin-top: 5px;
+	background-color: #9AA7DF;
+	cursor: pointer;
+	border: 1px solid #CED7FF;
+	border-radius: 8px;
+	color: white;
+	margin-right: 3px;
+	padding: 5px;
+}
+
+#filter-reset {
+	margin-top: 10px;
+	font-size: 15px;
+	background-color: transparent;
+	color: #424860;
+	border: none;
+	cursor: pointer;
+}
+
+.reset-selected {
+	font-size: 15px;
+	background-color: transparent;
+	color: #424860;
+	border: none;
+	cursor: pointer;
 }
 
 #contact-me {
@@ -351,12 +533,110 @@ button[type="submit"]:hover {
   }
   
   
+/****************
+* MEDIA QUERIES *
+****************/
 
-/* (D) Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+/* (A) Extra small devices (phones, 575px and down) */
+@media only screen and (max-width: 599px) {
+	.popup-inner {
+		width:95%;
+		padding: 10px 0px 0px 1px;
+		max-height: 95vh;
+	}
+
+	#skills-text {
+		width: 100%;
+	}
+
+	#projects-title {
+		width: 100%;
+	}
+
+	#about-img {
+		width: 90%
+	}
+
+	.box-fade {
+		width: 90%;
+	}
+	
+	.about {
+		width: 100%;
+	}
 }
 
-/* (E) Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+/* (B) Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.popup-inner {
+		width:95%;
+		padding: 10px 0px 0px 1px;
+		max-height: 95vh;
+	}
 
+	#skills-text {
+		width: 100%;
+	}
+
+	#projects-title {
+		width: 100%;
+	}
+
+	#about-img {
+		width: 90%
+	}
+
+	.box-fade {
+		width: 90%;
+	}
+
+	.about {
+		width: 100%;
+	}
+}
+
+/* (C) Medium devices (landscape tablets, 640px and up) */
+@media only screen and (min-width: 640px) {
+	#about-img {
+		width: 70%
+	}
+
+	.box-fade {
+		width: 80%;
+	}
+
+	.popup-inner {
+		width:95%;
+		padding: 10px 0px 0px 1px;
+		max-height: 95vh;
+	}
+}
+
+/* (D) Large devices (laptops/desktops, 769px and up) */
+@media only screen and (min-width: 769px) {
+	#about-img {
+		width: 60%
+	}
+
+	.about {
+		width: 100%;
+	}
+
+	.box-fade {
+		width: 50%;
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1300px and up) */
+@media only screen and (min-width: 1300px) {
+	.box-fade {
+		max-width: 700px;
+	}
+}
+
+/* Extra EXTRA large devices (large laptops and desktops, 1840px and up) */
+@media only screen and (min-width: 1845px) {
+	.parallax-div-main {
+		background-size: 65%;
+	}
 }
