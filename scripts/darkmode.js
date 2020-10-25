@@ -1,15 +1,16 @@
 $(document).ready(function () {
 
     $("i").click(function(){
+        $(".navbar-toggler-icon").toggleClass("img-bright");
         $("#night-mode-icon").toggleClass("img-bright");
         $("body").toggleClass("dark-bg");
         $(".title").toggleClass("perilight");
         $(".subtitle, .nav-link, #filter-reset").toggleClass("perilighter");
-        $(".parallax-div-01").toggleClass("blurple-bg");
+        $(".parallax-div-skills").toggleClass("blurple-bg");
         $("#skills").toggleClass("grey-bg");
-        $(".parallax-div-02").toggleClass("dark-image-bg2");
+        $(".parallax-div-projects").toggleClass("dark-image-bg");
         $("#filter-node, #filter-js, #filter-python, #filter-express, #filter-angular, #filter-react, #filter-mongo").toggleClass("grey-bg").toggleClass("perilighter");
-        $(".parallax-div-03").toggleClass("dark-image-bg");
+        $(".parallax-div-about").toggleClass("dark-image-bg2");
         $(".box-fade").toggleClass("dark-fade");
         $("#contact-me").toggleClass("dark-contact");
         $("#contact-text, label").toggleClass("perilight");

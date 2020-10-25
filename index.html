@@ -87,7 +87,7 @@
     <!-- First Page - Parallax Scroll 00 -->
 
     <section id="00">
-        <div class="parallax-div parallax-div-00 parallax-div-00B">
+        <div class="parallax-div-main">
             <div class="main">
                 <p class="title">Full-Stack Developer</p>
                 <p class="subtitle container">I design and code at every layer, and I love what I do.</p>
@@ -98,9 +98,9 @@
 
     <!-- About/Skills (Parallax Scroll 01) -->
     <section id="01">
-        <div class="parallax-div parallax-div-01">
+        <div class="parallax-div-skills">
             <p class="about about-title has-text-centered is-white container">Hi, I'm Joanna Makary. It's nice to meet you.</p>
-            <div class="column container">
+            <div id="skills-text" class="column container">
                 <p class="about has-text-centered is-white">I have recently graduated from Ryerson University with a B.Sc. in Computer Science. I am currently working on some coding and web development projects that I post on here for your viewing pleasure. My goal is to work as a Full-Stack Developer
                     for a company that I love and believe in.</p>
             </div>
@@ -163,10 +163,10 @@
 
             <!-- Recent Projects (Parallax Scroll 02) -->
             <section id="02">
-                <div class="parallax-div parallax-div-02 parallax-div-02B">
-                    <p class="about about-title has-text-centered container header-image"><img src="images/recent-projects.png" width="70%"></p>
-                    <div class="column">
-                        <p class="about has-text-centered container">These are projects that I am currently working on, or have worked on. <br>Hover over for more information about each.</p>
+                <div class="parallax-div-projects">
+                    <p class="about about-title has-text-centered container header-image"><img id="projects-title" src="images/recent-projects.png"></p>
+                    <div class="about column">
+                        <p class="has-text-centered container">These are projects that I am currently working on, or have worked on. <br>Hover over for more information about each.</p>
                         Click below to filter the projects by language/framework:
                         <div id="filters">
                             <button id="filter-node">Node.js</button> <button id="filter-js">JavaScript</button> <button id="filter-python">Python</button> <button id="filter-express">Express</button> <button id="filter-angular">Angular</button> <button id="filter-react">React</button> <button id="filter-mongo">MongoDB</button>
@@ -179,10 +179,10 @@
                             <h2 class="pop-title">PRC Caterers - Wordpress</h2>
                             <div class="container-fluid">
                                 <div class="row">
-                                  <div class="col">
+                                  <div class="col-sm">
                                     <img id="maple-pop-img" src="images/prc-gif.gif">
                                   </div>
-                                  <div class="my-auto col text-left">
+                                  <div class="my-auto col-sm text-left">
                                     PRC Caterers is a kosher catering company that I work for as Junior Developer and Graphic Designer/Social Media Manager.<br><br>
                                     It was built by <a href="http://leverage.it">Leverage.it</a>, and I am assigned to make further changes and new implementations the website.<br><br>
                                     <ul class="pop-ul">
@@ -206,10 +206,10 @@
                             <h2 class="pop-title">PRC Caterers - Graphic Design & Social Media</h2>
                             <div class="container-fluid">
                                 <div class="row">
-                                  <div class="col">
+                                  <div class="col-sm">
                                     <img id="maple-pop-img" src="images/prc-gif2.gif">
                                   </div>
-                                  <div class="my-auto col text-left">
+                                  <div class="my-auto col-sm text-left">
                                     PRC Caterers is a kosher catering company that I work for as Junior Developer and Graphic Designer/Social Media Manager.<br><br>
                                     I am assigned to create graphics for various tasks, and manage our social media websites.<br><br>
                                     <ul class="pop-ul">
@@ -443,7 +443,7 @@
 
             <!-- Parallax Scroll 03 -->
             <section id="03">
-                <div class="parallax-div-03 parallax-div-03B">
+                <div class="parallax-div-about">
                     <p class="about about-title has-text-centered container header-image"><img id="about-img" src="images/about-me.png" width="40%"></p><br>
                     <p class="box-fade container">I pride myself in a passion for user experience and performance.
                         <br> I have a love for learning and staying on top of the latest technologies.

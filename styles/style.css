@@ -1,3 +1,8 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body {
 	font-family: 'Quicksand', sans-serif;
 	text-align: center;
@@ -87,10 +92,6 @@ body {
 	width: 100%;
 }
 
-.main {
-	margin-top: 2vh;
-}
-
 .avatar-img {
 	margin-top: 15px;
 	width: 150px;
@@ -107,44 +108,43 @@ body {
 	margin-top: -10px;
 }
 
-.parallax-div-00 {
+.parallax-div-main {
 	/* Parallax Scrolling Effect */
 	background-image: url('../images/main.png');
-	height: 100vh;
+	height: 97vh;
 	background-attachment: fixed;
-	background-position: center bottom;
+	background-position: center bottom 1vh;
 	background-repeat: no-repeat;
-	background-size: 99%;
+	background-size: 95%;
 }
 
-.parallax-div-01 {
+/* Skills */
+.parallax-div-skills {
 	background: #b0bfff;
 	margin-top: -120px;
-	height: 100%;
-	background-attachment: fixed;
-	background-position: center bottom;
-	background-repeat: no-repeat;
-	background-size: contain;
-	width: 100%;
+	background-attachment: scroll;
+	background-repeat: repeat;
+	background-size: auto;
 }
 
-.parallax-div-02 {
+/* Recent Projects */
+.parallax-div-projects {
 	background-image: url('https://i.imgur.com/duRWCkx.jpg');
-	height: 140vh;
-	background-attachment: fixed;
-	background-repeat: repeat-x;
-	background-size: contain;
-	width: 100%;
+	background-attachment: scroll;
+	background-size: cover;
+	padding-bottom: 50px;
 }
 
-.parallax-div-03 {
+/* About Me */
+.parallax-div-about {
 	background-image: url('../images/urban.png');
-	height: 150vh;
-	background-attachment: fixed;
-	background-position: center bottom;
-	background-repeat: no-repeat;
+	background-attachment: scroll;
 	background-size: cover;
-	width: 100%;
+	padding-bottom: 50px;
+}
+
+#about-img {
+	width: 70%
 }
 
 .about {
@@ -223,6 +223,9 @@ ul {
 	margin-top: 25px;
 }
 
+#projects-title {
+	width: 70%;
+}
 /* Overlay Effect on Projects */
 .project {
 	display: block;
@@ -402,65 +405,7 @@ ul {
 }
 	  
 
-/****************
-* MEDIA QUERIES *
-****************/
 
-/* (A) Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-}
-
-/* (B) Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 600px) {
-	.parallax-div-00B {
-		/* Parallax Scrolling Effect */
-		background-image: url('../images/main.png');
-		height: 100vh;
-		background-attachment: scroll;
-		background-position: center bottom 120px;
-		background-repeat: no-repeat;
-		background-size: 95%;
-	}
-
-	.parallax-div-02B {
-		background-image: url('https://i.imgur.com/duRWCkx.jpg');
-		height: 200vh;
-		background-attachment: scroll;
-		background-repeat: repeat-x;
-		background-size: cover;
-		width: 100%;
-	}
-
-	.parallax-div-03 {
-		background-image: url('../images/urban.png');
-		height: 150vh;
-		background-attachment: scroll;
-		background-position: center bottom;
-		background-repeat: no-repeat;
-		background-size: cover;
-		width: 100%;
-	}
-}
-
-/* (C) Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
-	.parallax-div-02B {
-		background-image: url('https://i.imgur.com/duRWCkx.jpg');
-		height: 200vh;
-		background-attachment: scroll;
-		background-repeat: repeat-x;
-		background-size: cover;
-		width: 100%;
-	}
-
-	.box-fade {
-		background-color: rgba(233,240,243,0.8);
-		padding: 10px 0px 10px 0px;
-		width: 90%;
-		border-radius: 15px;
-		box-shadow: 0 5px 5px 0 rgba(233,240,243,0.5), 0 0 0 1px #E6ECF8;
-	}
-}
 
 #filters {
 	margin-top: 10px;
@@ -588,12 +533,110 @@ button[type="submit"]:hover {
   }
   
   
+/****************
+* MEDIA QUERIES *
+****************/
 
-/* (D) Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+/* (A) Extra small devices (phones, 575px and down) */
+@media only screen and (max-width: 599px) {
+	.popup-inner {
+		width:95%;
+		padding: 10px 0px 0px 1px;
+		max-height: 95vh;
+	}
+
+	#skills-text {
+		width: 100%;
+	}
+
+	#projects-title {
+		width: 100%;
+	}
+
+	#about-img {
+		width: 90%
+	}
+
+	.box-fade {
+		width: 90%;
+	}
+	
+	.about {
+		width: 100%;
+	}
 }
 
-/* (E) Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+/* (B) Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.popup-inner {
+		width:95%;
+		padding: 10px 0px 0px 1px;
+		max-height: 95vh;
+	}
 
+	#skills-text {
+		width: 100%;
+	}
+
+	#projects-title {
+		width: 100%;
+	}
+
+	#about-img {
+		width: 90%
+	}
+
+	.box-fade {
+		width: 90%;
+	}
+
+	.about {
+		width: 100%;
+	}
+}
+
+/* (C) Medium devices (landscape tablets, 640px and up) */
+@media only screen and (min-width: 640px) {
+	#about-img {
+		width: 70%
+	}
+
+	.box-fade {
+		width: 80%;
+	}
+
+	.popup-inner {
+		width:95%;
+		padding: 10px 0px 0px 1px;
+		max-height: 95vh;
+	}
+}
+
+/* (D) Large devices (laptops/desktops, 769px and up) */
+@media only screen and (min-width: 769px) {
+	#about-img {
+		width: 60%
+	}
+
+	.about {
+		width: 100%;
+	}
+
+	.box-fade {
+		width: 50%;
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1300px and up) */
+@media only screen and (min-width: 1300px) {
+	.box-fade {
+		max-width: 700px;
+	}
+}
+
+/* Extra EXTRA large devices (large laptops and desktops, 1840px and up) */
+@media only screen and (min-width: 1845px) {
+	.parallax-div-main {
+		background-size: 65%;
+	}
 }

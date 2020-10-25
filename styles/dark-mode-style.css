@@ -28,22 +28,20 @@
     background-color: rgba(66,72,96,0.9) !important;
 }
 
+
 .dark-image-bg {
-	background-image: url('https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/132950751/original/6000b859e2bc6c3381da6b2273c477467ad3ec17/make-any-type-of-pixel-art-scene-for-you.png');
-	height: 120vh;
-	background-attachment: fixed;
-	background-repeat: repeat-x;
-	background-size: auto;
-	width: 100%;
+	background-image: url('https://wallpapercave.com/wp/wp4751473.jpg');
+	background-attachment: scroll;
+	background-size: cover;
+	padding-bottom: 50px;
 }
 
 .dark-image-bg2 {
-	background-image: url('https://wallpapercave.com/wp/wp4751473.jpg');
-	height: 120vh;
-	background-attachment: fixed;
-	background-repeat: repeat-x;
-	background-size: auto;
-	width: 100%;
+	background-image: url('https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/132950751/original/6000b859e2bc6c3381da6b2273c477467ad3ec17/make-any-type-of-pixel-art-scene-for-you.png');
+	background-position: top;
+	background-attachment: scroll;
+	background-size: cover;
+	padding-bottom: 50px;
 }
 
 .dark {
@@ -94,4 +92,17 @@
 	background:#535a7c;
 	border: 1px solid #C4CFFF;
 	color: white;
+}
+
+/* (A) Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* (B) Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+/* (C) Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
 }
