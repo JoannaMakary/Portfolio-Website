@@ -151,7 +151,7 @@ body::-webkit-scrollbar-thumb {
 
 /* Recent Projects */
 .parallax-div-projects {
-  background-image: url("https://i.imgur.com/duRWCkx.jpg");
+  background-image: url("https://i.pinimg.com/originals/4f/a2/e6/4fa2e658153aa00186722cf159dc4204.jpg");
   background-attachment: scroll;
   background-size: cover;
   padding-bottom: 50px;
@@ -318,10 +318,9 @@ ul {
   background-color: white;
 }
 
-
 /* MODALS */
 .modal-header {
-  background: #D7DFFF;
+  background: #d7dfff;
   color: #8088b1;
 }
 
@@ -330,7 +329,8 @@ ul {
   font-weight: 600;
 }
 
-.modal-body, .modal-footer {
+.modal-body,
+.modal-footer {
   background: #e1e7f9;
   background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
   background-repeat: repeat;
@@ -341,7 +341,13 @@ ul {
   width: 95%;
 }
 
-#exampleModalCenter > div > div > div.modal-body > div > div > div.my-auto.col-sm.text-left {
+#exampleModalCenter
+  > div
+  > div
+  > div.modal-body
+  > div
+  > div
+  > div.my-auto.col-sm.text-left {
   padding: 0px 5px 0px 15px;
 }
 
@@ -386,7 +392,30 @@ ul {
   background-color: white;
 }
 
+.left-arrow {
+  z-index: 500;
+  position: fixed;
+  display: none;
 
+  left: 1vw;
+  top: 45%;
+  font-size: 4rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Courier";
+  cursor: pointer;
+}
+
+.right-arrow {
+  z-index: 500;
+  position: fixed;
+  display: none;
+  right: 1vw;
+  top: 45%;
+  font-size: 4rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "Courier";
+  cursor: pointer;
+}
 
 #filters {
   margin-top: 10px;
@@ -532,14 +561,19 @@ button[type="submit"]:hover {
     padding: 0;
   }
 
-  #exampleModalCenter > div > div > div.modal-body > div > div > div.my-auto.col-md.text-left {
+  #exampleModalCenter
+    > div
+    > div
+    > div.modal-body
+    > div
+    > div
+    > div.my-auto.col-md.text-left {
     padding: 0.5rem;
   }
 
   .popup-gif {
     padding: 0px;
   }
-
 
   #skills-text {
     width: 100%;
@@ -571,7 +605,13 @@ button[type="submit"]:hover {
     padding: 0;
   }
 
-  #exampleModalCenter > div > div > div.modal-body > div > div > div.my-auto.col-md.text-left {
+  #exampleModalCenter
+    > div
+    > div
+    > div.modal-body
+    > div
+    > div
+    > div.my-auto.col-md.text-left {
     padding: 0.5rem;
   }
 
@@ -609,7 +649,13 @@ button[type="submit"]:hover {
     padding: 0;
   }
 
-  #exampleModalCenter > div > div > div.modal-body > div > div > div.my-auto.col-md.text-left {
+  #exampleModalCenter
+    > div
+    > div
+    > div.modal-body
+    > div
+    > div
+    > div.my-auto.col-md.text-left {
     padding: 0.5rem;
   }
 

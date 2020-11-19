@@ -9,6 +9,7 @@
 // Backbone = JavaScript
 
 $(document).ready(function () {
+
   // Shows all projects
   $("#filter-reset").click(function () {
     $("#prc-caterers").show();
