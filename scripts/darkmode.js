@@ -20,5 +20,6 @@ $(document).ready(function () {
         $(".popup-inner").toggleClass("innerpop-dark");
         $(".pop-title").toggleClass("perilight")
         $(".btn-popped").toggleClass("popbtn-dark")
+        $(".modal-content").toggleClass("dark")
     })
 });
