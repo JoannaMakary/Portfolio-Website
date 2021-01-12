@@ -371,6 +371,13 @@ ul {
   color: orange;
 }
 
+.status-live {
+    line-height: 1rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color:rgb(119, 167, 48);
+}
+
 .btn-popped {
   background-color: #b0bfff;
   border: 1px #f8f9fa solid;
