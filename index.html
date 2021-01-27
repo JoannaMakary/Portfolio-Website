@@ -169,10 +169,57 @@
                         <p class="has-text-centered container">These are projects that I am currently working on, or have worked on. <br>Hover over for more information about each.</p>
                         Click below to filter the projects by language/framework:
                         <div id="filters">
-                            <button id="filter-node">Node.js</button> <button id="filter-js">JavaScript</button> <button id="filter-python">Python</button> <button id="filter-express">Express</button> <button id="filter-angular">Angular</button> <button id="filter-react">React</button> <button id="filter-mongo">MongoDB</button>
+                            <button id="filter-php">PHP</button> <button id="filter-node">Node.js</button> <button id="filter-js">JavaScript</button> <button id="filter-python">Python</button> <button id="filter-express">Express</button> <button id="filter-angular">Angular</button> <button id="filter-react">React</button> <button id="filter-mongo">MongoDB</button>
                         </div>
                         <button id="filter-reset">Reset Filters</button>
                     </div>
+
+                   <!-- Zero'th Project Modal -->
+                    <div class="modal fade bd-example-modal-lg" id="wol-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <button class="left-arrow"><</button>
+                        <button class="right-arrow">></button>
+                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title">World of League - Browser RPG</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                      <div class="popup-gif col-md-7">
+                                        <img class="pop-img" src="images/project-9.png">
+                                      </div>
+                                      <div class="my-auto col-md text-left">
+                                        <p>World of League is a fan-made browser-based RPG inspired by the RPG/strategy MOBA League of Legends from Riot Games.</p>
+                                        <p>You start the game as the first champion, Singed, and battle monsters that appear to gain EXP and gold, to be able to level up and purchase additional items and champions.</p>
+                                        <ul class="pop-ul">
+                                            <li>Creating an account to login with.</li>
+                                            <li>A shop to buy additional champions, items, and abilities.</li>
+                                            <li>Randomly spawned monsters that appear while exploring the map, and options to fight or run.</li>
+                                          </ul>
+                                          <br/>
+                                          <p>Specifically made to improve my programming of object-oriented PHP.</p>  
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="popup-gif col-md-7">
+                                            </div>
+                                            <div class="col-md">
+                                                <p class="status-progress text-center">Status: In Progress</p>
+                                            </div>
+                                            </div>
+                                  </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                              <a class="btn-popped" href="https://github.com/JoannaMakary/World-of-League">View on Github</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
 
                     <!-- First Project Modal -->
                     <div class="modal fade bd-example-modal-lg" id="prc-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -355,6 +402,23 @@
                     <!-- Recent Projects Display -->
                     <div class="container">
                         <div class="row">
+
+                            <div id="world-of-league" class="col-md-4 top-buffer">
+                                <div class="thumbnail">
+                                        <img class="project" src="images/project-9.png">
+                                        <div class="caption">
+                                            <div class="text">
+                                                World of League - Browser RPG<br>
+                                                <button type="button" class="btn-cust" data-toggle="modal" data-target="#wol-modal">
+                                                    View More
+                                                  </button>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+
                             <div id="maple-royals" class="col-md-4 top-buffer">
                                 <div class="thumbnail">
                                         <img class="project" src="images/project-6.png">
