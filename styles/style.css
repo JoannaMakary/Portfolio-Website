@@ -341,13 +341,7 @@ ul {
   width: 95%;
 }
 
-#exampleModalCenter
-  > div
-  > div
-  > div.modal-body
-  > div
-  > div
-  > div.my-auto.col-sm.text-left {
+#exampleModalCenter > div > div > div.modal-body > div > div > div.my-auto.col-sm.text-left {
   padding: 0px 5px 0px 15px;
 }
 
@@ -372,10 +366,10 @@ ul {
 }
 
 .status-live {
-    line-height: 1rem;
+  line-height: 1rem;
   font-weight: 600;
   font-size: 1.1rem;
-  color:rgb(119, 167, 48);
+  color: rgb(119, 167, 48);
 }
 
 .btn-popped {
@@ -428,6 +422,7 @@ ul {
   margin-top: 10px;
 }
 
+#filter-php,
 #filter-node,
 #filter-js,
 #filter-python,
@@ -568,13 +563,7 @@ button[type="submit"]:hover {
     padding: 0;
   }
 
-  #exampleModalCenter
-    > div
-    > div
-    > div.modal-body
-    > div
-    > div
-    > div.my-auto.col-md.text-left {
+  #exampleModalCenter > div > div > div.modal-body > div > div > div.my-auto.col-md.text-left {
     padding: 0.5rem;
   }
 
@@ -612,13 +601,7 @@ button[type="submit"]:hover {
     padding: 0;
   }
 
-  #exampleModalCenter
-    > div
-    > div
-    > div.modal-body
-    > div
-    > div
-    > div.my-auto.col-md.text-left {
+  #exampleModalCenter > div > div > div.modal-body > div > div > div.my-auto.col-md.text-left {
     padding: 0.5rem;
   }
 
@@ -656,13 +639,7 @@ button[type="submit"]:hover {
     padding: 0;
   }
 
-  #exampleModalCenter
-    > div
-    > div
-    > div.modal-body
-    > div
-    > div
-    > div.my-auto.col-md.text-left {
+  #exampleModalCenter > div > div > div.modal-body > div > div > div.my-auto.col-md.text-left {
     padding: 0.5rem;
   }
 
