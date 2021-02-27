@@ -28,7 +28,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/dark-mode-style.css">
@@ -46,54 +48,64 @@
       <img id="night-mode-icon" src="https://static.thenounproject.com/png/936949-200.png"/>
     </div>
 
-    <nav class="navbar navbar-expand-lg navbar-light is-transparent">
-        <div class="container">
-            <a class="navbar-brand" href="#"><img id="icon" src="images/jo.png" alt="Joanna Makary | Full-Stack Developer" width="65"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact-me">Contact</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/JoannaMakary?tab=repositories">Github</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://www.linkedin.com/in/joannamakary/">LinkedIn</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="resume/Joanna-Makary-Resume.pdf">Resume</a>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <!--
-					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
-                </form>
-            </div>
-        </div>
-    </nav>
-
     <!-- First Page - Parallax Scroll 00 -->
+    <section id="00" class='fade-in'>
+        <nav class="navbar navbar-expand-lg navbar-light is-transparent">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img id="icon" src="images/jo.png" alt="Joanna Makary | Full-Stack Developer" width="65"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-    <section id="00">
-        <div class="parallax-div-main">
-            <div class="main">
-                <p class="title">Full-Stack Developer</p>
-                <p class="subtitle container">I design and code at every layer, and I love what I do.</p>
-                <img class="img-responsive avatar-img" src="images/jo-avatar.png" />
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact-me">Contact</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/JoannaMakary?tab=repositories">Github</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.linkedin.com/in/joannamakary/">LinkedIn</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="resume/Joanna Makary - Junior Web Developer">Resume</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <!--
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+                    </form>
+                </div>
             </div>
-        </div>
+        </nav>
+
+        <div class="parallax-div-main">
+            <div class='container'>
+                <div class='row'>
+                    <div class='col-5 text-left'>
+                        <h1>Joanna Makary</h1>
+                        <h4>JUNIOR FULL-STACK DEVELOPER</h4>
+                        <br/>
+                        <h6 class='mb-3'>Hi, I'm Joanna. I love coding at every layer to create full-stack web applications.
+                            When I'm not coding, I'm probably gaming.
+                        </h6>
+                        <div class='small-p'>Currently seeking a Junior Developer position with a company that I believe in.</div>
+                    <a href='#contact-me' class="btn btn-light">Contact Me</a>
+                    </div>
+                    <div class='col'>
+                    </div>
+                </div>
+                </div>
+            </div>
     </section>
 
     <!-- About/Skills (Parallax Scroll 01) -->
@@ -169,13 +181,62 @@
                         <p class="has-text-centered container">These are projects that I am currently working on, or have worked on. <br>Hover over for more information about each.</p>
                         Click below to filter the projects by language/framework:
                         <div id="filters">
-                            <button id="filter-node">Node.js</button> <button id="filter-js">JavaScript</button> <button id="filter-python">Python</button> <button id="filter-express">Express</button> <button id="filter-angular">Angular</button> <button id="filter-react">React</button> <button id="filter-mongo">MongoDB</button>
+                            <button id="filter-php">PHP</button> <button id="filter-node">Node.js</button> <button id="filter-js">JavaScript</button> <button id="filter-python">Python</button> <button id="filter-express">Express</button> <button id="filter-angular">Angular</button> <button id="filter-react">React</button> <button id="filter-mongo">MongoDB</button>
                         </div>
                         <button id="filter-reset">Reset Filters</button>
                     </div>
 
+                   <!-- Zero'th Project Modal -->
+                    <div class="modal fade bd-example-modal-lg" id="wol-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <button class="left-arrow"><</button>
+                        <button class="right-arrow">></button>
+                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title">World of League - Browser RPG</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <div class="row">
+                                      <div class="popup-gif col-md-7">
+                                        <img class="pop-img" src="images/project-9.png">
+                                      </div>
+                                      <div class="my-auto col-md text-left">
+                                        <p>World of League is a fan-made browser-based RPG inspired by the RPG/strategy MOBA League of Legends from Riot Games.</p>
+                                        <p>You start the game as the first champion, Singed, and battle monsters that appear to gain EXP and gold, to be able to level up and purchase additional items and champions.</p>
+                                        <ul class="pop-ul">
+                                            <li>Creating an account to login with.</li>
+                                            <li>A shop to buy additional champions, items, and abilities.</li>
+                                            <li>Randomly spawned monsters that appear while exploring the map, and options to fight or run.</li>
+                                          </ul>
+                                          <br/>
+                                          <p>Specifically made to improve my programming of object-oriented PHP.</p>  
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="popup-gif col-md-7">
+                                            </div>
+                                            <div class="col-md">
+                                                <p class="status-progress text-center">Status: In Progress</p>
+                                            </div>
+                                            </div>
+                                  </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                              <a class="btn-popped" href="https://github.com/JoannaMakary/World-of-League">View on Github</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
                     <!-- First Project Modal -->
                     <div class="modal fade bd-example-modal-lg" id="prc-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <button class="left-arrow"><</button>
+                        <button class="right-arrow">></button>
                         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                           <div class="modal-content">
                             <div class="modal-header">
@@ -195,6 +256,7 @@
                                         <p>It was built by <a href="http://leverage.it">Leverage.it</a>, and I am assigned to make further changes and new implementations the website.</p>
                                         <ul class="pop-ul">
                                             <li>Creating an ordering form for people to order family meals.</li>
+                                            <li>Creating custom CSS and scripts site-wide.</li>
                                             <li>Fixing bugs and/or errors across all pages of the website.</li>
                                           </ul>  
                                       </div>
@@ -218,6 +280,8 @@
 
                       <!-- Second Project Modal -->
                       <div class="modal fade bd-example-modal-lg" id="prcc-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <button class="left-arrow"><</button>
+                        <button class="right-arrow">></button>
                         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                           <div class="modal-content">
                             <div class="modal-header">
@@ -253,7 +317,7 @@
                             </div>
                             <div class="modal-footer">
                               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                              <a class="btn-popped" href="https://1drv.ms/u/s!AolJCEnoP7KLkDQlrxs3JQ1r8zhE?e=rOQ9ET">View Samples</a>
+                              <!-- <a class="btn-popped" href="https://1drv.ms/u/s!AolJCEnoP7KLkDQlrxs3JQ1r8zhE?e=rOQ9ET">View Samples</a> -->
                               <a class="btn-popped" href="https://instagram.com/prccaterers">View Social Media</a>
                             </div>
                           </div>
@@ -262,6 +326,8 @@
 
                       <!-- Third Project Modal -->
                       <div class="modal fade bd-example-modal-lg" id="nutrition-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <button class="left-arrow"><</button>
+                        <button class="right-arrow">></button>
                         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                           <div class="modal-content">
                             <div class="modal-header">
@@ -332,14 +398,14 @@
                                         <div class="popup-gif col-md-7">
                                             </div>
                                             <div class="col-md">
-                                                <p class="status-progress text-center">Status: In Progress</p>
+                                                <p class="status-live text-center">Status: Live</p>
                                             </div>
                                             </div>
                                   </div>
                             </div>
                             <div class="modal-footer">
                               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                              <a class="btn-popped" href="https://github.com/JoannaMakary/MapleRoyals-PriceGuide">View on Github</a>
+                              <a class="btn-popped" href="https://mapleroyalspriceguide.com/">View Website</a>
                             </div>
                           </div>
                         </div>
@@ -348,6 +414,38 @@
                     <!-- Recent Projects Display -->
                     <div class="container">
                         <div class="row">
+
+                            <div id="world-of-league" class="col-md-4 top-buffer">
+                                <div class="thumbnail">
+                                        <img class="project" src="images/project-9.png">
+                                        <div class="caption">
+                                            <div class="text">
+                                                World of League - Browser RPG<br>
+                                                <button type="button" class="btn-cust" data-toggle="modal" data-target="#wol-modal">
+                                                    View More
+                                                  </button>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div id="maple-royals" class="col-md-4 top-buffer">
+                                <div class="thumbnail">
+                                        <img class="project" src="images/project-6.png">
+                                        <div class="caption">
+                                            <div class="text">
+                                                MapleRoyals Price Guide<br>
+                                                <button type="button" class="btn-cust" data-toggle="modal" data-target="#maple-modal">
+                                                    View More
+                                                  </button>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            
                             <div id="prc-caterers" class="col-md-4 top-buffer">
                                 <div class="thumbnail">
                                         <img class="project" src="images/prc-caterers.png">
@@ -385,21 +483,6 @@
                                             <div class="text">
                                                 Jo's Nutritional Calculator<br>
                                                 <button type="button" class="btn-cust" data-toggle="modal" data-target="#nutrition-modal">
-                                                    View More
-                                                  </button>
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-
-                            <div id="maple-royals" class="col-md-4 top-buffer">
-                                <div class="thumbnail">
-                                        <img class="project" src="images/project-6.png">
-                                        <div class="caption">
-                                            <div class="text">
-                                                MapleRoyals Price Guide<br>
-                                                <button type="button" class="btn-cust" data-toggle="modal" data-target="#maple-modal">
                                                     View More
                                                   </button>
                                             </div>

@@ -1,102 +1,104 @@
 .grey-bg {
-    background-color: #424860 !important;
-    box-shadow: 0 5px 5px 0 rgba(56, 56, 56, 0.9), 0 0 0 1px #2C2F33 !important;
+  background-color: #424860 !important;
+  box-shadow: 0 5px 5px 0 rgba(56, 56, 56, 0.9), 0 0 0 1px #2c2f33 !important;
 }
 
 .dark-border {
-    border-right: 1px solid #343538 !important;
+  border-right: 1px solid #343538 !important;
 }
 
 .dark-bg {
-    background-color: #2C2F33 !important;
-    color: white;
+  background-color: #2c2f33 !important;
+  color: white;
 }
 
 .blurple-bg {
-    background-color: #848FBF !important;
+  background-color: #848fbf !important;
 }
 
 .dark-fade {
-    background-color: rgba(66,72,96,0.9);
-	padding: 10px 0px 10px 0px;
-	width: 50%;
-	border-radius: 15px;
-	box-shadow: 0 5px 5px 0 rgba(50, 54, 72,0.5), 0 0 0 1px #E6ECF8;
+  background-color: rgba(66, 72, 96, 0.9);
+  padding: 10px 0px 10px 0px;
+  width: 50%;
+  border-radius: 15px;
+  box-shadow: 0 5px 5px 0 rgba(50, 54, 72, 0.5), 0 0 0 1px #e6ecf8;
 }
 
 .dark-contact {
-    background-color: rgba(66,72,96,0.9) !important;
+  background-color: rgba(66, 72, 96, 0.9) !important;
 }
 
+.dark-image-main {
+  background-image: url("../images/dark-main.svg") !important;
+}
 
 .dark-image-bg {
-	background-image: url('https://wallpapercave.com/wp/wp4751473.jpg');
-	background-attachment: scroll;
-	background-size: cover;
-	padding-bottom: 50px;
+  background-image: url("https://wallpapercave.com/wp/wp4751473.jpg");
+  background-attachment: scroll;
+  background-size: cover;
+  padding-bottom: 50px;
 }
 
 .dark-image-bg2 {
-	background-image: url('https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/132950751/original/6000b859e2bc6c3381da6b2273c477467ad3ec17/make-any-type-of-pixel-art-scene-for-you.png');
-	background-position: top;
-	background-attachment: scroll;
-	background-size: cover;
-	padding-bottom: 50px;
+  background-image: url("https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/132950751/original/6000b859e2bc6c3381da6b2273c477467ad3ec17/make-any-type-of-pixel-art-scene-for-you.png");
+  background-position: top;
+  background-attachment: scroll;
+  background-size: cover;
+  padding-bottom: 50px;
 }
 
 .dark {
-    color: #2C2F33 !important;
+  color: #2c2f33 !important;
 }
 
 .darker {
-    color: #23272A !important;
+  color: #23272a !important;
 }
 
 .perilight {
-    color: #C4CFFF !important;
+  color: #c4cfff !important;
 }
 
 .perilighter {
-    color: #E1E7FF !important;
+  color: #e1e7ff !important;
 }
 
 .greyple {
-    color: #99AAB5 !important;
+  color: #99aab5 !important;
 }
 
 .blurple {
-    color: #7289DA !important;
+  color: #7289da !important;
 }
 
 .img-bright {
-	filter: invert(1);
+  filter: invert(1);
 }
 
 .img-brighter {
-	filter: brightness(1.2);
+  filter: brightness(1.2);
 }
 
 .innerpop-dark {
-	background:#2C2F33;
-	background-image: url('https://www.transparenttextures.com/patterns/gun-metal.png');
-	background-position: center bottom;
-	background-repeat: repeat;
+  background: #2c2f33;
+  background-image: url("https://www.transparenttextures.com/patterns/gun-metal.png");
+  background-position: center bottom;
+  background-repeat: repeat;
 }
 
 .popbtn-dark {
-	background:#2C2F33;
-	border: 1px solid #C4CFFF;
+  background: #2c2f33;
+  border: 1px solid #c4cfff;
 }
 
 .popbtn-dark:hover {
-	background:#535a7c;
-	border: 1px solid #C4CFFF;
-	color: white;
+  background: #535a7c;
+  border: 1px solid #c4cfff;
+  color: white;
 }
 
 /* (A) Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-
 }
 
 /* (B) Small devices (portrait tablets and large phones, 600px and up) */
@@ -104,5 +106,4 @@
 }
 /* (C) Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-
 }
