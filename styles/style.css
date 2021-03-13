@@ -80,11 +80,46 @@ body::-webkit-scrollbar-thumb {
   text-align: center !important;
 }
 
+body {
+  margin: 0;
+}
+
+.popup {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin: auto;
+  display: block;
+  z-index: 999;
+}
+
+.popup-inner {
+  width: 800px;
+  background: #fff;
+  position: relative;
+  top: 20%;
+  margin: auto;
+  display: block;
+  padding: 2rem 1rem;
+}
+
+.popup-inner p {
+  padding: 20px 20px 0px;
+  font-family: Poppins, sans-serif;
+  font-size: 1em;
+}
+
+.popup-inner button {
+  padding: 10px;
+  margin: 20px;
+}
+
 #night-mode {
   z-index: 999;
   top: 40px;
-  right: 15px;
-  position: absolute;
+  position: fixed;
 }
 
 #night-mode-icon {
@@ -217,6 +252,7 @@ h6,
   background-attachment: scroll;
   background-size: cover;
   padding-bottom: 50px;
+  background-attachment: fixed;
 }
 
 /* About Me */
@@ -225,6 +261,7 @@ h6,
   background-attachment: scroll;
   background-size: cover;
   padding-bottom: 50px;
+  background-attachment: fixed;
 }
 
 #about-img {
@@ -844,10 +881,11 @@ button[type="submit"]:hover {
 
   #\30 0 {
     background-image: url("../images/main.svg");
-    height: 110vh;
+    height: 120vh;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
   }
 
   #\30 0 > div > div > div > div.col-5.text-left {
@@ -880,10 +918,11 @@ button[type="submit"]:hover {
 
   #\30 0 {
     background-image: url("../images/main.svg");
-    height: 110vh;
+    height: 120vh;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
   }
 
   #\30 0 > div > div > div > div.col-5.text-left {
